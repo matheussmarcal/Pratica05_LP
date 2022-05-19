@@ -52,8 +52,8 @@ public class programa {
 					String consulta = JOptionPane.showInputDialog("Digite uma informação que deseja pesquisar");
 					
 						if (social.size()==0) {
-							JOptionPane.showMessageDialog(null, "Cadastro não encontrado");
-						}else {
+							JOptionPane.showMessageDialog(null, "Cadastro não encontrado");}
+						else {
 					
 						for (int i=0; i<social.size(); i++)
 							{
@@ -70,7 +70,7 @@ public class programa {
 					break;
 					
 					
-					}
+		}
 	}
 		while (menu!=4);
 }
