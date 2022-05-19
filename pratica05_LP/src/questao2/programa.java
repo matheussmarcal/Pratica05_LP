@@ -50,11 +50,21 @@ public class programa {
 				case 3:
 					
 					String consulta = JOptionPane.showInputDialog("Digite uma informação que deseja pesquisar");
+					
+						if (social.size()==0) {
+							JOptionPane.showMessageDialog(null, "Cadastro não encontrado");
+						}else {
+					
 						for (int i=0; i<social.size(); i++)
 							{
 								if (social.get(i).contains(consulta))
 									JOptionPane.showMessageDialog(null, social.get(i));
+								else if (i==social.size()-1) {
+									JOptionPane.showMessageDialog(null, "Usuário não encontrado");
+								}
 							}
+						}
+						break;
 				case 4:
 					JOptionPane.showMessageDialog(null, "Saindo");
 					break;
